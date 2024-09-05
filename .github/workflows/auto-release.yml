@@ -1,6 +1,9 @@
-# This is a basic workflow that is manually triggered
+# To setup workflow correctly you will have to do 2 things
+# 1. create env. and set your personal access-token to secret with name "ACCESS_TOKEN"
+# 2. go to Settings > Code Automation > Actions > General
+#    then scroll to Workflow permissions and [x] checked Read and Write permissions
 
-name: Auto Create Tag
+name: Auto Release
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
