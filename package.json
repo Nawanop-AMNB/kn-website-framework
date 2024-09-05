@@ -7,8 +7,7 @@
   "scripts": {
     "dev": "ts-node --esm server.ts",
     "build": "next build && tsc --project tsconfig.server.json",
-    "start": "NODE_ENV=production node ./dist/server.js",
-    "start:passenger": "NODE_ENV=production passenger start --app-type node --startup-file ./dist/server.js"
+    "start": "NODE_ENV=production node ./dist/server.js"
   },
   "author": "",
   "license": "ISC",
