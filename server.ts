@@ -1,6 +1,8 @@
 import connect from "connect";
+import { writeFile } from "fs";
 import { createServer } from "http";
 import next from "next";
+import path from "path";
 import { parse } from "url";
 
 const port = parseInt(process.env.PORT || "3000", 10);
@@ -14,7 +16,9 @@ app.prepare().then(() => {
     handle(req, res, parse(req.url!, true));
   });
 
-  createServer(connectInstance).listen(3000);
+  const server = createServer(connectInstance).listen(3000);
+  const getLogPath = path.resolve("error.log");
+  server.on("error", (error) => writeFile(getLogPath, error.stack, () => {}));
 
   console.log(
     `> Server listening at http://localhost:${port} as ${
