@@ -1,6 +1,6 @@
 {
   "name": "kn-website-framework",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "./dist/server.js",
   "type": "module",
