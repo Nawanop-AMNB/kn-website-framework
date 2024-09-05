@@ -3,11 +3,11 @@
   "version": "1.0.6",
   "description": "",
   "main": "./dist/server.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-    "dev": "ts-node --esm server.ts",
+    "dev": "ts-node app.ts",
     "build": "next build && tsc --project tsconfig.server.json",
-    "start": "NODE_ENV=production node ./dist/server.js"
+    "start": "NODE_ENV=production node ./app.js"
   },
   "author": "",
   "license": "ISC",
