@@ -2,12 +2,12 @@
   "name": "next-custom-server",
   "version": "1.0.0",
   "description": "",
-  "main": ".next/server.js",
+  "main": "./dist/server.js",
   "type": "module",
   "scripts": {
     "dev": "ts-node --esm server.ts",
     "build": "next build && tsc --project tsconfig.server.json",
-    "start": "NODE_ENV=production node ./.next/server.js"
+    "start": "NODE_ENV=production node ./dist/server.js"
   },
   "author": "",
   "license": "ISC",
