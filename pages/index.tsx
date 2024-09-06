@@ -5,7 +5,7 @@ import { GetServerSideProps } from "next";
 export default function Page({ items }: { items: any[] }) {
   return (
     <Box>
-      This is test serverSideProps
+      This is test serverSideProps for second instance
       <pre>{JSON.stringify(items, null, 2)}</pre>
     </Box>
   );
